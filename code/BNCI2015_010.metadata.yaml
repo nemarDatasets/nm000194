@@ -1,0 +1,238 @@
+_dataset:
+  class: BNCI2015_010
+  code: BNCI2015-010
+  doi: 10.1016/j.clinph.2012.12.050
+  interval:
+  - 0
+  - 0.8
+  n_subjects: 12
+  paradigm: p300
+abstract: A Brain Computer Interface (BCI) speller using rapid serial visual presentation (RSVP) paradigm for gaze-independent
+  mental typewriting. Twelve healthy participants successfully operated the RSVP speller with mean online spelling rate of
+  1.43 symb/min and mean symbol selection accuracy of 94.8%. The RSVP speller does not require gaze shifts and can be operated
+  by non-spatial visual attention, making it suitable for patients with impaired oculo-motor control.
+acquisition:
+  cap_manufacturer: Brain Products
+  cap_model: actiCap
+  channel_types:
+    eeg: 63
+  electrode_type: active electrode
+  filters: lowpass Chebyshev filter up to 40 Hz
+  hardware: BrainAmp amplifiers
+  impedance_threshold_kohm: 10.0
+  line_freq: 50.0
+  montage: 10-20
+  n_channels: 63
+  reference: left mastoid
+  sampling_rate: 200.0
+  sensor_type: active electrode
+  sensors:
+  - Fp1
+  - Fp2
+  - AF3
+  - AF4
+  - Fz
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - FCz
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FC5
+  - FC6
+  - FT7
+  - FT8
+  - Cz
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - T7
+  - T8
+  - CPz
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CP5
+  - CP6
+  - TP7
+  - TP8
+  - Pz
+  - P1
+  - P2
+  - P3
+  - P4
+  - P5
+  - P6
+  - P7
+  - P8
+  - P9
+  - P10
+  - POz
+  - PO3
+  - PO4
+  - PO7
+  - PO8
+  - PO9
+  - PO10
+  - Oz
+  - O1
+  - O2
+  software: Python with Pyff framework
+bci_application:
+  applications:
+  - speller
+  - communication
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: calibration/test split
+  evaluation_type:
+  - within_session
+data_processed: true
+data_structure:
+  n_blocks: 3
+  n_trials: 10 sequences of 30 symbols
+  trials_context: per sequence
+documentation:
+  contact_info:
+  - laura.acqualagna@tu-berlin.de
+  - benjamin.blankertz@tu-berlin.de
+  country: Germany
+  doi: 10.1016/j.clinph.2012.12.050
+  ethics_approval:
+  - Study performed in accordance with the declaration of Helsinki
+  funding:
+  - BMBF Grant
+  - Grant Nos s
+  - Grant No. MU MU
+  - DFG Grant
+  institution: Berlin Institute of Technology
+  institution_department: Machine Learning Laboratory; Neurotechnology Group
+  investigators:
+  - Laura Acqualagna
+  - Benjamin Blankertz
+  keywords:
+  - Brain Computer Interfaces
+  - RSVP
+  - ERPs
+  - Speller
+  - P300
+  - N2
+  - gaze-independent
+  license: CC-BY-NC-ND-4.0
+  publication_year: 2013
+  repository: BNCI Horizon
+  senior_author: Benjamin Blankertz
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    non_target: 29
+    target: 1
+  feedback_type: visual
+  has_training_test_split: true
+  instructions: Participants fixate center of screen, concentrate on target letter, silently count its occurrences. Avoid
+    blinking during visual presentation.
+  mode: online
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: RSVP letters
+  study_design: 'RSVP (Rapid Serial Visual Presentation) BCI speller where 30 symbols are presented one-by-one in random order
+    at the center of the screen. Three conditions tested: NoColor 116ms SOA, Color 116ms SOA, and Color 83ms SOA. Colors used
+    to facilitate discrimination.'
+  synchronicity: synchronous
+  task_type: spelling
+  trial_duration: 46.5
+file_format: EEG
+methodology: Three experimental conditions tested (NoColor 116ms, Color 116ms, Color 83ms SOA). Each condition included calibration,
+  copy-spelling, and free-spelling phases. Vocabulary of 30 symbols presented one-by-one at screen center in pseudo-random
+  order. EEG recorded at 1000 Hz with 63 channels, downsampled to 200 Hz for ERP analysis. Classification using LDA with shrinkage
+  on spatio-temporal features from 5 individually selected time windows. Symbol selection based on averaged classifier output
+  across 10 sequences.
+paradigm_specific:
+  detected_paradigm: p300
+  n_repetitions: 10
+  n_targets: 30
+  soa_ms: 116.0
+participants:
+  age_max: 55
+  age_mean: 29.17
+  age_min: 24
+  age_std: 8.4
+  bci_experience: mixed
+  clinical_population: Healthy
+  gender:
+    female: 6
+    male: 6
+  handedness: all right-handed
+  health_status: patients
+  n_subjects: 12
+  species: human
+performance:
+  accuracy_percent: 94.8
+  mean_spelling_rate_symb_per_min: 1.43
+  trial_duration_116ms_SOA_s: 46.5
+  trial_duration_83ms_SOA_s: 36.6
+preprocessing:
+  artifact_methods:
+  - min-max criterion for eye movement rejection (75 µV on F9, Fz, F10, AF3, AF4)
+  - broadband power rejection (5-40 Hz)
+  data_state: filtered
+  downsampled_to_hz: 200.0
+  epoch_window:
+  - -0.1
+  - 1.2
+  filter_order: passband up to 40 Hz, stopband starting at 49 Hz
+  filter_type: Chebyshev
+  lowpass_hz: 40.0
+  notes: Baseline correction on pre-stimulus interval (116ms for 116ms SOA, 83/2ms for 83ms SOA). Non-target epochs excluded
+    if 3 preceding or following symbols were targets.
+  preprocessing_applied: true
+  preprocessing_steps:
+  - lowpass filter
+  - downsampling
+  - baseline correction
+  - artifact rejection
+  re_reference: linked mastoids (offline)
+runs_per_session: 2
+sessions:
+- calibration
+- copy-spelling
+- free-spelling
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - LDA with shrinkage
+  feature_extraction:
+  - spatio-temporal features
+  - averaged voltages within time windows
+  frequency_bands:
+    alpha:
+    - 7
+    - 13
+  spatial_filters:
+  - 55 channels used for classification (all except Fp1,2, AF3,4, F9,10, FT7,8)
+tags:
+  modality:
+  - Visual
+  pathology:
+  - Healthy
+  type:
+  - ERP

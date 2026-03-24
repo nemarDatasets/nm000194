@@ -1,0 +1,42 @@
+{
+	"TaskName": "p300",
+	"Manufacturer": "Brain Products",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 200.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "lowpass filter, downsampling, baseline correction, artifact rejection"
+		}
+	},
+	"RecordingDuration": 2505.315,
+	"RecordingType": "continuous",
+	"EEGReference": "left mastoid",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "10-20 system",
+	"EEGChannelCount": 63,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "BrainAmp amplifiers",
+	"SoftwareVersions": "Python with Pyff framework",
+	"CapManufacturer": "Brain Products",
+	"CapManufacturersModelName": "actiCap",
+	"HardwareFilters": {
+		"Bandpass": {
+			"HighCutoffFrequency": 40.0,
+			"Type": "Chebyshev",
+			"Order": "passband up to 40 Hz, stopband starting at 49 Hz"
+		}
+	},
+	"TaskDescription": "[spelling] RSVP (Rapid Serial Visual Presentation) BCI speller where 30 symbols are presented one-by-one in random order at the center of the screen. Three conditions tested: NoColor 116ms SOA, Color 116ms SOA, and Color 83ms SOA. Colors used to facilitate discrimination. Trial duration: 46.5s, SOA: 116.0ms.",
+	"Instructions": "Participants fixate center of screen, concentrate on target letter, silently count its occurrences. Avoid blinking during visual presentation.",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/tsk_GxjZBNiJorj1K/",
+	"InstitutionName": "Berlin Institute of Technology",
+	"InstitutionAddress": "Germany",
+	"InstitutionalDepartmentName": "Machine Learning Laboratory; Neurotechnology Group",
+	"SubjectArtefactDescription": "Impedance kept below 10.0 kOhm",
+	"DeviceSerialNumber": "n/a",
+	"Description": "EEG recording.",
+	"MISCChannelCount": 0
+}
