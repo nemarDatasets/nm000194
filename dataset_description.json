@@ -1,43 +1,45 @@
 {
-	"Name": "BNCI 2015-010 RSVP P300 dataset",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC-BY-NC-ND-4.0",
-	"Authors": [
-		"Laura Acqualagna",
-		"Benjamin Blankertz"
-	],
-	"Funding": [
-		"BMBF Grant",
-		"Grant Nos s",
-		"Grant No. MU MU",
-		"DFG Grant"
-	],
-	"EthicsApprovals": [
-		"Study performed in accordance with the declaration of Helsinki"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.1016/j.clinph.2012.12.050"
-		}
-	],
-	"Keywords": [
-		"Brain Computer Interfaces",
-		"RSVP",
-		"ERPs",
-		"Speller",
-		"P300",
-		"N2",
-		"gaze-independent"
-	],
-	"PublicationYear": 2013
+  "Name": "BNCI 2015-010 RSVP P300 dataset",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-NC-ND-4.0",
+  "Authors": [
+    "Laura Acqualagna",
+    "Benjamin Blankertz"
+  ],
+  "Funding": [
+    "BMBF Grant",
+    "Grant Nos s",
+    "Grant No. MU MU",
+    "DFG Grant"
+  ],
+  "EthicsApprovals": [
+    "Study performed in accordance with the declaration of Helsinki"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.1016/j.clinph.2012.12.050"
+    }
+  ],
+  "Keywords": [
+    "Brain Computer Interfaces",
+    "RSVP",
+    "ERPs",
+    "Speller",
+    "P300",
+    "N2",
+    "gaze-independent"
+  ],
+  "PublicationYear": 2013,
+  "DatasetDOI": "10.82901/nemar.nm000194",
+  "Version": "1.0.0"
 }
