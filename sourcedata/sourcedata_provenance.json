@@ -14,62 +14,75 @@
   {
    "file": "RSVP_VPfat.mat",
    "bytes": 371933644,
-   "sha256": "8012b5f09aa3165cf502e6c10a86b1b3bade6bef583aee1eeb1b42d3d7b83374"
+   "sha256": "8012b5f09aa3165cf502e6c10a86b1b3bade6bef583aee1eeb1b42d3d7b83374",
+   "subject": "1"
   },
   {
    "file": "RSVP_VPgcb.mat",
    "bytes": 285854531,
-   "sha256": "f0a49048f47c9b22484768f6c9dca24995a6f71e849d0f603ef237956ee1df95"
+   "sha256": "f0a49048f47c9b22484768f6c9dca24995a6f71e849d0f603ef237956ee1df95",
+   "subject": "2"
   },
   {
    "file": "RSVP_VPgcc.mat",
    "bytes": 333652041,
-   "sha256": "483ee289e3015af111981546d530fad9c89fbfd29268cb12bd8efda9c1c28b49"
+   "sha256": "483ee289e3015af111981546d530fad9c89fbfd29268cb12bd8efda9c1c28b49",
+   "subject": "3"
   },
   {
    "file": "RSVP_VPgcd.mat",
    "bytes": 365718538,
-   "sha256": "9828f0e6d2bc2f8f20ad822f2fcbf886617a62bda5d33b47539ff2940a76444a"
+   "sha256": "9828f0e6d2bc2f8f20ad822f2fcbf886617a62bda5d33b47539ff2940a76444a",
+   "subject": "4"
   },
   {
    "file": "RSVP_VPgce.mat",
    "bytes": 262591836,
-   "sha256": "e2d655cb21de8afa839eb4da6f529219557c91fdf9f97021c882d5a32c454f80"
+   "sha256": "e2d655cb21de8afa839eb4da6f529219557c91fdf9f97021c882d5a32c454f80",
+   "subject": "5"
   },
   {
    "file": "RSVP_VPgcf.mat",
    "bytes": 304553600,
-   "sha256": "0add7d8b842ff1532b11170d3c1feb47b3cee462af27253cde585fcad7f7cb0c"
+   "sha256": "0add7d8b842ff1532b11170d3c1feb47b3cee462af27253cde585fcad7f7cb0c",
+   "subject": "6"
   },
   {
    "file": "RSVP_VPgcg.mat",
    "bytes": 359562092,
-   "sha256": "96b6b3e8a08857a764c7dd990c008bb89bae2568cd265fc0fad825ea0b2f61c7"
+   "sha256": "96b6b3e8a08857a764c7dd990c008bb89bae2568cd265fc0fad825ea0b2f61c7",
+   "subject": "7"
   },
   {
    "file": "RSVP_VPgch.mat",
    "bytes": 374803122,
-   "sha256": "40ca31c5e172844072158e59b7f89f623b79373dc2378c6e4b534ab064dfef0f"
+   "sha256": "40ca31c5e172844072158e59b7f89f623b79373dc2378c6e4b534ab064dfef0f",
+   "subject": "8"
   },
   {
    "file": "RSVP_VPiay.mat",
    "bytes": 412248908,
-   "sha256": "b5eaee209c1e93ba637334fdd37f375ef3c7f0a5a29ed79bfe536a3e8289fb2a"
+   "sha256": "b5eaee209c1e93ba637334fdd37f375ef3c7f0a5a29ed79bfe536a3e8289fb2a",
+   "subject": "9"
   },
   {
    "file": "RSVP_VPicn.mat",
    "bytes": 317592113,
-   "sha256": "f5fbfca36036f0919a7d4390355fed45ed9d46aa301284dde6d5e515adcfb3c6"
+   "sha256": "f5fbfca36036f0919a7d4390355fed45ed9d46aa301284dde6d5e515adcfb3c6",
+   "subject": "10"
   },
   {
    "file": "RSVP_VPicr.mat",
    "bytes": 271308886,
-   "sha256": "4b2584c49b43644e889f2f23e2a67448158d5b09dff74fdd64ca2ac9e73fbb56"
+   "sha256": "4b2584c49b43644e889f2f23e2a67448158d5b09dff74fdd64ca2ac9e73fbb56",
+   "subject": "11"
   },
   {
    "file": "RSVP_VPpia.mat",
    "bytes": 242183025,
-   "sha256": "d9ac9a29dae30006d29c9d500572eb04b90f62b4e3dbf2e8a8adcfe72e2d9175"
+   "sha256": "d9ac9a29dae30006d29c9d500572eb04b90f62b4e3dbf2e8a8adcfe72e2d9175",
+   "subject": "12"
   }
- ]
+ ],
+ "n_subjects_recorded": 12
 }
