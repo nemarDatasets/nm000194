@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "BNCI 2015-010 RSVP P300 dataset",
-  "description": "A Brain Computer Interface dataset implementing rapid serial visual presentation (RSVP) for gaze-independent P300-based spelling. This derivative dataset comprises preprocessed EEG recordings from 12 healthy participants performing a mental typewriting task with three experimental conditions varying stimulus onset asynchrony and color cues. The data is derived from the original study by Acqualagna & Blankertz (2013), with preprocessing including artifact rejection, filtering, and baseline correction, and classification achieved using linear discriminant analysis on spatio-temporal features.",
-  "methods_description": "EEG data acquired at 1000 Hz using 63 active electrodes in 10-20 montage with BrainAmp amplifiers and actiCap system, referenced to left mastoid. Online lowpass Chebyshev filtering at 40 Hz applied during acquisition. Offline preprocessing included re-referencing to linked mastoids, downsampling to 200 Hz, artifact rejection using min-max criterion for eye movements and broadband power rejection, and baseline correction. Classification employed LDA with shrinkage on spatio-temporal features from individually selected time windows across 10 symbol sequences.",
+  "description": "A brain-computer interface dataset implementing a gaze-independent rapid serial visual presentation (RSVP) P300 speller paradigm. Twelve healthy participants performed mental typewriting tasks using visual attention to discriminate target symbols from non-targets presented sequentially at screen center. The dataset includes preprocessed EEG recordings (63 channels, 200 Hz sampling rate after downsampling from 1000 Hz acquisition) with event-related potential markers, achieving 94.8% mean accuracy and 1.43 symbols/minute spelling rate.",
+  "methods_description": "EEG data acquired at 1000 Hz using 63-channel BrainAmp amplifiers with actiCap electrodes in 10-20 montage, referenced to left mastoid. Online lowpass filtering at 40 Hz (Chebyshev). Preprocessing included offline re-referencing to linked mastoids, downsampling to 200 Hz, lowpass filtering (40 Hz), baseline correction, and artifact rejection using min-max criterion (75 µV threshold on frontal channels) and broadband power rejection (5-40 Hz). Classification employed linear discriminant analysis with shrinkage on spatio-temporal features from individually selected time windows. P300 and N2 components were analyzed as event-related potentials.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -12,27 +12,28 @@
   },
   "keywords": [
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "Brain-Computer Interfaces"
     },
     {
-      "term": "EEG"
+      "term": "Event-Related Potentials",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D034951"
     },
     {
       "term": "P300"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "EEG"
+    },
+    {
+      "term": "Electroencephalography"
     },
     {
       "term": "RSVP"
     },
     {
-      "term": "speller"
+      "term": "Speller"
     },
     {
       "term": "gaze-independent"
@@ -41,7 +42,7 @@
       "term": "N2"
     },
     {
-      "term": "Event-Related Potentials"
+      "term": "ERPs"
     }
   ],
   "related_identifiers": [
@@ -108,5 +109,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "89c0e25fa4bc432a76d8555a3d55b0d2e60b832ad04f619c18bd0998e52b8232"
+  "source_hash": "540e51c6cf09789386aaeb9b7236d5f69c8bf021916a1a72549d1f53e0608288"
 }
