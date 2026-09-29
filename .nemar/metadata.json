@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "BNCI 2015-010 RSVP P300 dataset",
-  "description": "A brain-computer interface dataset implementing a gaze-independent rapid serial visual presentation (RSVP) P300 speller paradigm. Twelve healthy participants performed mental typewriting tasks using visual attention to discriminate target symbols from non-targets presented sequentially at screen center. The dataset includes preprocessed EEG recordings (63 channels, 200 Hz sampling rate after downsampling from 1000 Hz acquisition) with event-related potential markers, achieving 94.8% mean accuracy and 1.43 symbols/minute spelling rate.",
-  "methods_description": "EEG data acquired at 1000 Hz using 63-channel BrainAmp amplifiers with actiCap electrodes in 10-20 montage, referenced to left mastoid. Online lowpass filtering at 40 Hz (Chebyshev). Preprocessing included offline re-referencing to linked mastoids, downsampling to 200 Hz, lowpass filtering (40 Hz), baseline correction, and artifact rejection using min-max criterion (75 µV threshold on frontal channels) and broadband power rejection (5-40 Hz). Classification employed linear discriminant analysis with shrinkage on spatio-temporal features from individually selected time windows. P300 and N2 components were analyzed as event-related potentials.",
+  "description": "EEG recordings from 12 healthy participants operating a gaze-independent rapid serial visual presentation (RSVP) P300 speller. Thirty symbols were presented one at a time at the screen center under three conditions (NoColor 116 ms SOA, Color 116 ms SOA, Color 83 ms SOA), each with calibration, copy-spelling and free-spelling phases. Participants reached a mean online accuracy of 94.8% and a mean spelling rate of 1.43 symbols/min, showing that the speller is suitable for users with impaired oculo-motor control.",
+  "methods_description": "EEG was recorded with 63 active electrodes (BrainAmp amplifiers, actiCap) at 1000 Hz, referenced to the left mastoid, and downsampled to 200 Hz. Data were low-pass filtered at 40 Hz, baseline corrected, and cleaned of artifacts. Classification used LDA with shrinkage on spatio-temporal features from 5 individually selected time windows. Symbol selection was based on classifier output averaged over 10 sequences.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -12,37 +12,27 @@
   },
   "keywords": [
     {
-      "term": "Brain-Computer Interfaces"
+      "term": "EEG"
     },
     {
-      "term": "Event-Related Potentials",
+      "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D034951"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "P300"
     },
     {
-      "term": "EEG"
-    },
-    {
-      "term": "Electroencephalography"
-    },
-    {
       "term": "RSVP"
     },
     {
-      "term": "Speller"
+      "term": "event-related potentials"
+    },
+    {
+      "term": "speller"
     },
     {
       "term": "gaze-independent"
-    },
-    {
-      "term": "N2"
-    },
-    {
-      "term": "ERPs"
     }
   ],
   "related_identifiers": [
@@ -98,7 +88,7 @@
     "eeg"
   ],
   "sizes": [
-    "6.1 GB (37 files)"
+    "5.69 GB (37 files)"
   ],
   "formats": [
     ".bdf",
