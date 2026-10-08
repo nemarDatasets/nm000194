@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2015-010 RSVP P300 dataset",
-  "description": "EEG recordings from 12 healthy participants operating a gaze-independent rapid serial visual presentation (RSVP) P300 speller. Thirty symbols were presented one at a time at the screen center under three conditions (NoColor 116 ms SOA, Color 116 ms SOA, Color 83 ms SOA), each with calibration, copy-spelling and free-spelling phases. Participants reached a mean online accuracy of 94.8% and a mean spelling rate of 1.43 symbols/min, showing that the speller is suitable for users with impaired oculo-motor control.",
-  "methods_description": "EEG was recorded with 63 active electrodes (BrainAmp amplifiers, actiCap) at 1000 Hz, referenced to the left mastoid, and downsampled to 200 Hz. Data were low-pass filtered at 40 Hz, baseline corrected, and cleaned of artifacts. Classification used LDA with shrinkage on spatio-temporal features from 5 individually selected time windows. Symbol selection was based on classifier output averaged over 10 sequences.",
+  "description": "EEG recordings from twelve healthy participants operating a gaze-independent rapid serial visual presentation (RSVP) P300 speller. Thirty symbols were presented one at a time at the center of the screen under three conditions (NoColor 116 ms, Color 116 ms, Color 83 ms SOA), each with calibration, copy-spelling and free-spelling phases. The original study reported a mean online spelling accuracy of 94.8%, supporting use by patients with impaired oculo-motor control.",
+  "methods_description": "EEG was recorded at 1000 Hz from 63 active electrodes (BrainAmp amplifiers, actiCap, 10-20 montage, left mastoid reference) and downsampled to 200 Hz. Data were low-pass filtered at 40 Hz, baseline corrected and artifact rejected. Classification used LDA with shrinkage on spatio-temporal features from 5 individually selected time windows, averaging classifier output across 10 sequences.",
   "license": "CC-BY-NC-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -12,7 +12,9 @@
   },
   "keywords": [
     {
-      "term": "EEG"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "Brain-Computer Interfaces",
@@ -20,10 +22,10 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "P300"
+      "term": "RSVP"
     },
     {
-      "term": "RSVP"
+      "term": "P300"
     },
     {
       "term": "event-related potentials"
@@ -99,5 +101,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "540e51c6cf09789386aaeb9b7236d5f69c8bf021916a1a72549d1f53e0608288"
+  "source_hash": "02badd2b159d8854f26ea5ecbf3a49582f93c29afe5460a546f9061b9ec9f186"
 }
